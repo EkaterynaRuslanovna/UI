@@ -1,1 +1,1 @@
-# UI
+# UI Tests for https://www.globalsqa.com/angularJs-protractor/BankingProject/
