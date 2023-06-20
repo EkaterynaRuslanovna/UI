@@ -6,7 +6,7 @@ from locators.add_cust_locators import AddCustLocators
 from locators.open_account_locators import OpenAccountLocators
 from pages.base_page import BasePage
 from data.deposit_withdraw_data import rand_withdraw, rand_deposit
-from generator.person_generator import generated_person_data
+from data.person_generator import generated_person_data
 
 
 class LoginPage(BasePage):
