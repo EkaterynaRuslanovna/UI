@@ -29,5 +29,5 @@ def ping_websites(sites, num_requests=5):
         print("-" * 50)
 
 
-websites_to_ping = ["www.google.com", "www.ithillel.ua", "www.github.com"]
-ping_websites(websites_to_ping, num_requests=3)
+# websites_to_ping = ["www.google.com", "www.ithillel.ua", "www.github.com"]
+# ping_websites(websites_to_ping, num_requests=3)
