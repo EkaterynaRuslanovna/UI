@@ -4,11 +4,11 @@ import subprocess
 
 def ping_websites(sites, num_requests=5):
     """
-    Функція для перевірки пінгу сайтів.
+    A function for checking the ping of sites
 
-    :param sites: (list): Список із URL-адресами сайтів, які необхідно перевірити.
-    :param num_requests: (int): Кількість пінг запитів (по замовчуванню 4).
-    :return: None -  виводить результат пінгування в консоль.
+    :param sites: (list): A list of URLs for sites to check.
+    :param num_requests: (int): Number of ping requests (4 by default).
+    :return: None -  outputs the ping result to the console.
     """
 
     operating_system = os.name
@@ -16,10 +16,10 @@ def ping_websites(sites, num_requests=5):
     for site in sites:
         print(f"Ping website: {site}")
         try:
-            if operating_system == 'nt':                                                       # 'nt' -назва для Windows
+            if operating_system == 'nt':                                                       # 'nt' - for Windows
                 ping_cmd = ["ping", "-n", str(num_requests), site]
             else:
-                ping_cmd = ["ping", "-c", str(num_requests), site]                                      # (macOS, Linux)
+                ping_cmd = ["ping", "-c", str(num_requests), site]                                    # for macOS, Linux
 
             result = subprocess.run(ping_cmd, capture_output=True, text=True)
             print(result.stdout)
